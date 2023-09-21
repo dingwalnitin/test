@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Company</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg'); /* Path to your hero image */
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+            animation: buzzy 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes buzzy {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature img {
+            width: 200px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Car Company</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Car Company</h1>
+            <p>Discover the best cars on the market.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="car1.jpg" alt="Car 1"> <!-- Path to your car1 image -->
+            <h2>Quality Cars</h2>
+            <p>Explore our wide range of high-quality cars.</p>
+        </div>
+        <div class="feature">
+            <img src="car2.jpg" alt="Car 2"> <!-- Path to your car2 image -->
+            <h2>Expert Team</h2>
+            <p>Our team of experts is here to assist you.</p>
+        </div>
+        <div class="feature">
+            <img src="car3.jpg" alt="Car 3"> <!-- Path to your car3 image -->
+            <h2>Great Deals</h2>
+            <p>Don't miss out on our special offers and discounts.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Car Company</p>
+    </footer>
+</body>
+</html>
